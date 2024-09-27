@@ -1,0 +1,259 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+/* =========================================
+       Nav bar
+============================================ */
+.nav_fake{
+	width: 100%;
+	height: 80px;
+	padding: 20px 35px;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	padding: 20px 35px;
+	background-color: white;
+	z-index: 10;
+}
+
+.flex-div{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.left-div{
+	width:150px;
+	height: 100%;
+	display: flex;
+	gap: 20px;
+	align-items:center;
+}
+.left-div i{
+	width:15px;
+	cursor: pointer;
+}
+
+.left-div img{
+	width:100px;
+	cursor: pointer;
+}
+.nav-search{
+	display: flex;
+	align-items: center;
+}
+
+i{
+	font-size: 20px;
+}
+
+.search-bar{
+	width: 40vw;
+	height: 35px;
+	border: 1px solid rgba(0, 0, 0, 0.411);
+	padding: 1px 15px;
+	display: flex;
+	align-items: center;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background-color: #fff;
+}
+.search-bar input{
+	width: 350px;
+	height: 95%;
+	border: none;
+	outline: none;
+}
+.search-icon{
+	background-color: #d3d3d3;
+	height: 35px;
+	align-items: center;
+	display: flex;
+	width: 60px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.411);
+	cursor: pointer;
+}
+.microphone_icon{
+	margin-left: 20px;
+	cursor: pointer;
+}
+.right-div{
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+.user_logo{
+	background-color: rgb(169, 169, 199);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* =========================================
+        Sidebar
+============================================ */
+
+.sidebar{
+	height: 100%;
+	width: 250px;
+	padding: 5px;
+	position: fixed;
+}
+
+.line{
+	width: 95%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.267);
+}
+
+.sidebar_top{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+}
+.sidebar_top a{
+	display: flex;
+	gap: 20px;
+	padding:10px 20px;
+	border-radius: 10px;
+	color: #000;
+}
+.sidebar_top a:hover{
+	background-color: #d3d3d35d;
+}
+.sidebar_top .active{
+	background-color: #d3d3d35d;
+}
+
+.sidebar_middle{
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+}
+.sidebar_middle h4{
+	margin-left: 20px;
+}
+.sidebar_middle h4 i{
+	font-size: 15px;
+}
+.sidebar_middle a{
+	display: flex;
+	gap: 20px;
+	padding:10px 20px;
+	border-radius: 10px;
+	color: #000;
+}
+
+.sidebar_middle a:hover{
+	background-color: #d3d3d35d;
+}
+
+.sidebar_bottom{
+	position: absolute;
+	bottom: 75px;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+}
+.sidebar_bottom a{
+	display: flex;
+	gap: 20px;
+	padding:10px 20px;
+	border-radius: 10px;
+	color: #000;
+}
+.sidebar_bottom a:hover{
+	background-color: #d3d3d35d;
+}
+.main{
+	padding: 50px;
+	margin-left: 260px;
+}
+
+/* =========================================
+        Video Card
+============================================ */
+.video_container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.video_card{
+	min-width: 250px;
+	flex-basis: 23%;
+	height: 100%;
+	border-radius: 10px;
+}
+.video_card:hover{
+	background-color: #d3d3d35d;
+
+}
+.thumb{
+	width: 100%;
+	height: 180px;
+	border-radius: 10px;
+	position: relative;
+}
+.thumb img{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.thumb span{
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	right: 20px;
+	margin-bottom: 20px;
+	background-color: #0000006c;
+	padding: 5px;
+	border-radius: 5px;
+}
+.video_details{
+	display: flex;
+	padding: 0px;
+	margin-top: 10px;
+	gap: 10px;
+}
+.views_date{
+	display: flex;
+	gap: 10px;
+}
+.views_date h5{
+	font-weight: 100;
+}
+
+.channel_name h6{
+	font-size: 18px;
+	font-weight: 200;
+}
